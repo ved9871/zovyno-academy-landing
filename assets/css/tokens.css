@@ -1,0 +1,137 @@
+/*
+  ZOVYNO Academy — design tokens (Workstream 01, v1.1)
+  Three layers: primitive (raw brand values) -> semantic (purpose) -> component.
+  Brand values come from design-tokens.json and must not be changed here.
+*/
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-latin-ext-var.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* ---------- 1. Primitive: exact package palette ---------- */
+  --p-navy: #14233d;
+  --p-deep-navy: #0d172b;
+  --p-teal: #087b73;
+  --p-amber: #f2b24c;
+  --p-silver: #c6cdd7;
+  --p-cloud: #f4f7fa;
+  --p-ink: #18283d;
+  --p-mint: #b8f4e9;
+  --p-white: #ffffff;
+
+  /* Primitive: derived shades of the same hues, contrast-checked */
+  --p-teal-deep: #06645e;
+  --p-teal-glow: #3cc7b6;
+  --p-navy-raised: #1c2f4d;
+  --p-amber-ink: #8a5a0b; /* amber for large text on light surfaces */
+  --p-slate: #4f6478;
+  --p-mist: #c2d2e1;
+  --p-line: #dde5ec;
+
+  /* ---------- 2. Semantic ---------- */
+  --surface-page: var(--p-white);
+  --surface-soft: var(--p-cloud);
+  --surface-card: var(--p-white);
+  --surface-dark: var(--p-navy);
+  --surface-darker: var(--p-deep-navy);
+  --surface-dark-raised: var(--p-navy-raised);
+  --surface-accent: var(--p-teal);
+
+  --text-strong: var(--p-ink);
+  --text-body: var(--p-slate);
+  --text-on-dark: var(--p-white);
+  --text-on-dark-soft: var(--p-mist);
+  --text-link: var(--p-teal);
+  --text-emphasis-dark: var(--p-amber);
+  --text-emphasis-light: var(--p-amber-ink);
+  --text-highlight-dark: var(--p-mint);
+
+  --border-light: var(--p-line);
+  --border-dark: rgb(198 205 215 / 0.16);
+  --border-dark-strong: rgb(198 205 215 / 0.32);
+
+  --action: var(--p-teal);
+  --action-hover: var(--p-teal-deep);
+  --accent: var(--p-amber);
+  --focus-ring: var(--p-teal);
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Nirmala UI', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-h3: clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);
+  --text-h2: clamp(2.1rem, 1.3rem + 3.3vw, 3.6rem);
+  --text-hero: clamp(3.3rem, 1.6rem + 7.4vw, 6.75rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --radius-button: 11px;
+  --radius-card: 18px;
+  --radius-hero: 22px;
+  --radius-pill: 999px;
+
+  --shell: 1240px;
+  --gutter: clamp(20px, 4vw, 32px);
+  --section-y: clamp(72px, 8vw, 128px);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 160ms;
+  --dur: 240ms;
+  --dur-slow: 620ms;
+
+  --shadow-card: 0 1px 2px rgb(20 35 61 / 0.04), 0 14px 34px rgb(20 35 61 / 0.07);
+  --shadow-card-hover: 0 2px 4px rgb(20 35 61 / 0.05), 0 26px 52px rgb(20 35 61 / 0.14);
+  --shadow-dark: 0 34px 70px rgb(9 24 40 / 0.4);
+
+  /* ---------- 3. Component ---------- */
+  --btn-height: 50px;
+  --btn-radius: var(--radius-button);
+  --btn-primary-bg: var(--action);
+  --btn-primary-bg-hover: var(--action-hover);
+  --btn-primary-text: var(--p-white);
+
+  --card-bg: var(--surface-card);
+  --card-border: var(--border-light);
+  --card-radius: var(--radius-card);
+  --card-pad: clamp(22px, 2.4vw, 32px);
+
+  --chip-bg: var(--p-white);
+  --chip-border: var(--border-light);
+  --chip-active-bg: var(--p-navy);
+  --chip-active-text: var(--p-white);
+
+  --strip-bg: var(--p-amber);
+  --strip-text: var(--p-deep-navy);
+  --header-bg: rgb(13 23 43 / 0.86);
+}
+
+/* Dark surfaces switch the focus ring to amber so it stays visible */
+[data-surface='dark'] {
+  --focus-ring: var(--p-amber);
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "ZOVYNO Academy \u2014 Workstream 01",
+  "version": "1.1",
+  "status": "working visual baseline",
+  "colors": {
+    "navy": "#14233D",
+    "deepNavy": "#0D172B",
+    "teal": "#087B73",
+    "amber": "#F2B24C",
+    "silver": "#C6CDD7",
+    "cloud": "#F4F7FA",
+    "ink": "#18283D",
+    "mint": "#B8F4E9",
+    "white": "#FFFFFF"
+  },
+  "typeface": {
+    "ui": "Inter",
+    "display": "Inter Display"
+  },
+  "radius": {
+    "buttonPx": 11,
+    "cardPx": 18,
+    "heroCardPx": 22
+  },
+  "breakpoints": {
+    "mobileMaxPx": 767,
+    "tabletMaxPx": 1199,
+    "desktopMinPx": 1200
+  },
+  "approvedConcept": "A \u2014 Immersive Midnight + Light Education Sections",
+  "note": "Distinct ZOVYNO identity. Approved parent endorsement artwork is a separate brand asset; no fake social proof or live trading claims."
+}

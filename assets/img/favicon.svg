@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ZOVYNO Academy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173a4a"/>
+      <stop offset="1" stop-color="#0d172b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25" fill="none" stroke="#98F2E0" stroke-opacity="0.35"/>
+  <path d="M16 20h32L20 44h28" fill="none" stroke="#DFFBF4" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="46" cy="20" r="4.6" fill="#F2B24C"/>
+</svg>
