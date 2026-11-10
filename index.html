@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ZOVYNO Academy — Design Directions</title>
-    <meta name="description" content="Two landing page design directions for ZOVYNO Academy. Design concepts for review — not a live academy." />
+    <meta name="description" content="Four landing page design directions for ZOVYNO Academy. Design concepts for review — not a live academy." />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#0b0c10" />
     <link rel="icon" href="volt/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=JetBrains+Mono:wght@400;700&family=Pixelify+Sans:wght@700&family=Sora:wght@800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -226,6 +226,52 @@
         background: var(--sun);
         box-shadow: 5px 5px 0 var(--ink);
       }
+      .thumb--aurora {
+        justify-items: center;
+        text-align: center;
+        background:
+          radial-gradient(50% 70% at 20% 10%, rgb(139 108 255 / 0.7), transparent 70%),
+          radial-gradient(45% 60% at 85% 30%, rgb(94 235 255 / 0.4), transparent 70%),
+          radial-gradient(50% 70% at 70% 100%, rgb(255 111 216 / 0.45), transparent 70%),
+          #070616;
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.4rem, 4.2vw, 3rem);
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+      .thumb--aurora b:nth-child(2) {
+        background: linear-gradient(100deg, #5eebff, #8b6cff 52%, #ff7bdc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        padding-bottom: 0.1em;
+      }
+      .thumb--quest {
+        background:
+          radial-gradient(circle, rgb(255 255 255 / 0.5) 1px, transparent 1.5px) 0 0 / 26px 26px,
+          #0b1026;
+        font-family: 'Pixelify Sans', monospace;
+        font-weight: 700;
+        font-size: clamp(1.4rem, 4.2vw, 3rem);
+        line-height: 1.05;
+        color: #f3f1ff;
+      }
+      .thumb--quest b:nth-child(2) {
+        color: #5cf2c7;
+      }
+      .thumb--quest b:nth-child(3) {
+        color: #ff6b4a;
+      }
+      .thumb--quest i {
+        position: absolute;
+        right: 8%;
+        bottom: 14%;
+        width: 14%;
+        aspect-ratio: 1;
+        background: #ffe14d;
+        box-shadow: 6px 6px 0 #ff5fb7;
+      }
       .body {
         display: grid;
         gap: 14px;
@@ -355,9 +401,9 @@
 
       <main>
         <section class="intro">
-          <h1>Two directions. <span>One academy.</span></h1>
+          <h1>Four directions. <span>One academy.</span></h1>
           <p>
-            Both designs carry the same ten sections and the same copy: paths, five disciplines, foundation courses, the
+            All four designs carry the same ten sections and the same copy: paths, five disciplines, foundation courses, the
             learning journey, ORZENO practice lab, leadership pathway, mission and FAQ. Open each one on a laptop and on
             a phone, then pick the energy that fits.
           </p>
@@ -385,11 +431,33 @@
               <span class="open">Open Design 2 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
             </div>
           </a>
+
+          <a class="card" href="aurora/" style="--c: #8b6cff">
+            <div class="thumb thumb--aurora" aria-hidden="true"><b>Learn.</b><b>Decentralize.</b><b>Lead.</b></div>
+            <div class="body">
+              <span class="num" style="color: #b7a6ff">Design 3</span>
+              <h2>Aurora</h2>
+              <p>Premium Web3 protocol feel. Frosted-glass panels floating over a slow-moving colour glow, gradient headlines and an orbiting discipline hub.</p>
+              <ul class="chips"><li>Dark</li><li>Glass / gradient</li><li>Sora + Manrope</li></ul>
+              <span class="open" style="background: linear-gradient(100deg, #5eebff, #8b6cff 52%, #ff7bdc)">Open Design 3 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+            </div>
+          </a>
+
+          <a class="card" href="quest/" style="--c: #5cf2c7">
+            <div class="thumb thumb--quest" aria-hidden="true"><b>Learn.</b><b>Decentralize.</b><b>Lead.</b><i></i></div>
+            <div class="body">
+              <span class="num">Design 4</span>
+              <h2>Quest</h2>
+              <p>Retro arcade, level-up academy. Pixel type, game-style panels, a discipline map and a staged learning path, for a gaming-and-crypto audience.</p>
+              <ul class="chips"><li>Dark</li><li>Retro game / pixel</li><li>Pixelify Sans + Outfit</li></ul>
+              <span class="open">Open Design 4 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+            </div>
+          </a>
         </div>
 
         <div class="notes">
-          <div class="note"><h3>Same content</h3><p>Every section, label and disclaimer is identical in both, so the choice is purely about look and feel.</p></div>
-          <div class="note"><h3>Works on phones</h3><p>Both are responsive, with working menu, course filters, course previews and FAQ.</p></div>
+          <div class="note"><h3>Same content</h3><p>Every section, label and disclaimer is identical in all four, so the choice is purely about look and feel.</p></div>
+          <div class="note"><h3>Works on phones</h3><p>All are responsive, with working menu, course filters, course previews and FAQ.</p></div>
           <div class="note"><h3>Honest by design</h3><p>No invented numbers, testimonials or live market data. Courses are marked Planned; the lab is marked Simulated.</p></div>
         </div>
       </main>
