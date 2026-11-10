@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZOVYNO Academy — Design 2: Pop</title>
+    <meta
+      name="description"
+      content="ZOVYNO Academy design concept (Design 2: Pop): practical learning in Web3, financial markets, trading systems, digital marketing and leadership. Not a live academy or open enrollment."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#FFF6E5" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E0E12'/%3E%3Cpath d='M8 9.5h16L9.5 22.5h15' fill='none' stroke='%23C6FF3A' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body id="top">
+    <!-- Icon sprite -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" /></symbol>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3z" /><path d="M9 12l2 2 4-4" /></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2" /><circle cx="5" cy="18" r="2.2" /><circle cx="19" cy="18" r="2.2" /><path d="M12 7.2v4.3M12 11.5l-5.4 5M12 11.5l5.4 5" /></symbol>
+      <symbol id="i-market" viewBox="0 0 24 24"><path d="M4 20h16M5 15l4.5-4.5 3 3L18 8M14.5 8H18v3.5" /></symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3" /><path d="M12 8V4.6M9 13v2M15 13v2M2 12.5v3M22 12.5v3" /><circle cx="12" cy="3.4" r="1.1" /></symbol>
+      <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h2l5 4V5L7 9H5a1 1 0 0 0-1 1z" /><path d="M16 9a4 4 0 0 1 0 6M18.6 6.4a7.6 7.6 0 0 1 0 11.2" /></symbol>
+      <symbol id="i-lead" viewBox="0 0 24 24"><circle cx="9" cy="7.5" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.2a6.5 6.5 0 0 1 3.5 5.8" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4z" /><path d="M5 17a3 3 0 0 1 3-3h11" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></symbol>
+      <symbol id="i-mark" viewBox="0 0 32 32"><path d="M6.4 8.2h19.2L8 23.8h18.2" /></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6-2.6 7.9-2.6-7.9L1.5 12l7.9-2.6z" /></symbol>
+    </svg>
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="concept-strip">
+      <a class="strip-back" href="../"><svg class="i"><use href="#i-arrow-left" /></svg>All designs</a>
+      <p role="note">Design concept <span aria-hidden="true">·</span> Not a live academy<span class="strip-extra"> or open enrollment</span></p>
+    </div>
+
+    <!-- 01 · Header -->
+    <header class="site-header" id="site-header">
+      <div class="shell header-inner">
+        <a class="logo" href="#top" aria-label="ZOVYNO Academy — back to top">
+          <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#i-mark" /></svg></span>
+          <span class="logo-word"><strong>ZOVYNO</strong><small>ACADEMY</small></span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#paths">Learning Paths</a>
+          <a href="#pillars">Disciplines</a>
+          <a href="#courses">Courses</a>
+          <a href="#labs">Practice Labs</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#mission">Our Mission</a>
+        </nav>
+
+        <a class="btn btn--sm header-cta" href="#courses">Explore Free Learning <svg class="i"><use href="#i-arrow" /></svg></a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu">
+          <svg class="i i--open"><use href="#i-menu" /></svg>
+          <svg class="i i--close"><use href="#i-close" /></svg>
+        </button>
+      </div>
+
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav aria-label="Mobile">
+          <a href="#paths">Learning Paths</a>
+          <a href="#pillars">Disciplines</a>
+          <a href="#courses">Courses</a>
+          <a href="#labs">Practice Labs</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#mission">Our Mission</a>
+        </nav>
+        <a class="btn" href="#courses">Explore Free Learning <svg class="i"><use href="#i-arrow" /></svg></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 01 · Hero -->
+      <section class="hero" data-surface="paper" aria-labelledby="hero-title">
+        <svg class="deco deco--1" aria-hidden="true" focusable="false"><use href="#i-star" /></svg>
+        <svg class="deco deco--2" aria-hidden="true" focusable="false"><use href="#i-star" /></svg>
+        <svg class="deco deco--3" aria-hidden="true" focusable="false"><use href="#i-star" /></svg>
+
+        <div class="shell">
+          <p class="label">The decentralized learning generation</p>
+
+          <div class="hero-title-wrap">
+            <h1 class="hero-title" id="hero-title">
+              <span class="word word--lime">Learn.</span>
+              <span class="word word--purple">Decentralize.</span>
+              <span class="word word--pink">Lead.</span>
+            </h1>
+
+            <div class="badge" role="img" aria-label="Free foundations — planned">
+              <svg class="badge-spin" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <polygon
+                  class="badge-burst"
+                  points="196,100 180.4,116 188.7,136.7 168.2,145.6 167.9,167.9 145.6,168.2 136.7,188.7 116,180.4 100,196 84,180.4 63.3,188.7 54.4,168.2 32.1,167.9 31.8,145.6 11.3,136.7 19.6,116 4,100 19.6,84 11.3,63.3 31.8,54.4 32.1,32.1 54.4,31.8 63.3,11.3 84,19.6 100,4 116,19.6 136.7,11.3 145.6,31.8 167.9,32.1 168.2,54.4 188.7,63.3 180.4,84"
+                />
+                <path id="badge-circle" d="M100,100 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0" fill="none" />
+                <text class="badge-text"><textPath href="#badge-circle" startOffset="0">FREE FOUNDATIONS · PLANNED ·</textPath></text>
+              </svg>
+              <svg class="badge-core" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <circle class="badge-core-disc" cx="100" cy="100" r="40" />
+                <path class="badge-core-mark" d="M82 86h36L84 114h34" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="hero-body">
+                Build real skills in Web3, financial markets, trading systems, digital marketing and leadership — with
+                learning designed for practice, not hype.
+              </p>
+              <div class="hero-actions">
+                <a class="btn" href="#courses">Explore Free Learning <svg class="i"><use href="#i-arrow" /></svg></a>
+                <a class="btn btn--white" href="#paths">Discover Your Path</a>
+              </div>
+              <p class="hero-note">
+                <svg class="i"><use href="#i-shield" /></svg>
+                Start with knowledge. No wallet, token purchase or trading deposit required.
+              </p>
+            </div>
+
+            <div class="hero-collage" data-reveal>
+              <ul class="stickers" aria-label="The five disciplines">
+                <li><a class="sticker tone-lime" href="#pillar-web3" style="--r: -4deg"><span class="tile"><svg class="i"><use href="#i-network" /></svg></span><span><b>Web3</b><small>Decentralization</small></span></a></li>
+                <li><a class="sticker tone-sky" href="#pillar-trading" style="--r: 3deg"><span class="tile"><svg class="i"><use href="#i-market" /></svg></span><span><b>Financial Markets</b><small>Forex &amp; Spot</small></span></a></li>
+                <li><a class="sticker tone-sun" href="#pillar-automation" style="--r: 2.5deg"><span class="tile"><svg class="i"><use href="#i-bot" /></svg></span><span><b>Trading Systems</b><small>Bot / Copy / AI-assisted</small></span></a></li>
+                <li><a class="sticker tone-pink" href="#pillar-leadership" style="--r: -3deg"><span class="tile"><svg class="i"><use href="#i-lead" /></svg></span><span><b>Leadership</b><small>Build communities</small></span></a></li>
+                <li><a class="sticker tone-white" href="#pillar-marketing" style="--r: -1.5deg"><span class="tile"><svg class="i"><use href="#i-megaphone" /></svg></span><span><b>Digital Marketing</b><small>Real-world growth</small></span></a></li>
+              </ul>
+              <p class="collage-caption">Connected knowledge. Human leadership.</p>
+            </div>
+          </div>
+
+          <ul class="hero-band" aria-label="Focus areas">
+            <li><b>01</b> Web3 &amp; Decentralization</li>
+            <li><b>02</b> Trading Systems</li>
+            <li><b>03</b> Future Leadership</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Marquee band -->
+      <div class="band band--ink band--left">
+        <div class="band-inner">
+          <div class="track">
+            <ul>
+              <li>Web3<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Forex<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Spot<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Copy trading<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Bots<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>AI-assisted tools<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Digital marketing<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Leadership<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Risk first<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 · Paths -->
+      <section class="section" id="paths" data-surface="purple" aria-labelledby="paths-title">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="label">Choose your starting point</p>
+              <h2 id="paths-title">Everyone starts <span class="hl hl--lime">somewhere.</span></h2>
+            </div>
+            <p class="lead">
+              Whether you're exploring decentralized technology, trading systems or community growth, start with a clear
+              path — no complicated onboarding.
+            </p>
+          </div>
+
+          <div class="path-grid" data-stagger>
+            <a class="card path-card tone-lime" href="#courses" data-path-filter="web3" data-reveal style="--r: -1.2deg">
+              <span class="path-top"><span class="tile"><svg class="i"><use href="#i-network" /></svg></span><span class="mono-tag">Path / 01</span></span>
+              <h3>Explore<br />Decentralization.</h3>
+              <p>Understand blockchain networks, digital ownership and why decentralization matters.</p>
+              <span class="text-link">View foundation path <svg class="i"><use href="#i-arrow" /></svg></span>
+            </a>
+            <a class="card path-card tone-sun" href="#courses" data-path-filter="trading" data-reveal style="--r: 0.9deg">
+              <span class="path-top"><span class="tile"><svg class="i"><use href="#i-market" /></svg></span><span class="mono-tag">Path / 02</span></span>
+              <h3>Build<br />Trading Skills.</h3>
+              <p>Learn financial markets, risk management and responsible automation.</p>
+              <span class="text-link">Explore trading path <svg class="i"><use href="#i-arrow" /></svg></span>
+            </a>
+            <a class="card path-card tone-pink" href="#courses" data-path-filter="leadership" data-reveal style="--r: -0.7deg">
+              <span class="path-top"><span class="tile"><svg class="i"><use href="#i-lead" /></svg></span><span class="mono-tag">Path / 03</span></span>
+              <h3>Grow as a<br />Leader.</h3>
+              <p>Practice digital marketing, communication, mentoring and community leadership.</p>
+              <span class="text-link">See leadership path <svg class="i"><use href="#i-arrow" /></svg></span>
+            </a>
+          </div>
+
+          <p class="fine-print">
+            Learning paths shown are part of the proposed academy experience. Availability is clearly labeled in the course
+            directory.
+          </p>
+        </div>
+      </section>
+
+      <!-- 03 · Pillars -->
+      <section class="section" id="pillars" data-surface="paper" aria-labelledby="pillars-title">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="label">A focused curriculum</p>
+              <h2 id="pillars-title">Five disciplines. <span class="hl hl--pink">One bigger purpose.</span></h2>
+            </div>
+            <p class="lead">
+              Built around meaningful skills that connect technical understanding, financial judgment, responsible growth
+              and future leadership.
+            </p>
+          </div>
+
+          <ul class="pillar-grid" data-stagger>
+            <li class="card pillar pillar--wide tone-lime" id="pillar-web3" data-reveal>
+              <div class="pillar-head"><span class="tile"><svg class="i"><use href="#i-network" /></svg></span><span class="big-num" aria-hidden="true">01</span></div>
+              <h3>Web3 &amp; Decentralization</h3>
+              <p>Blockchain, networks, wallets, DeFi and digital ownership.</p>
+              <ul class="tags"><li>Networks</li><li>Wallet safety</li><li>DeFi</li><li>Digital ownership</li></ul>
+            </li>
+            <li class="card pillar pillar--wide tone-sky" id="pillar-trading" data-reveal>
+              <div class="pillar-head"><span class="tile"><svg class="i"><use href="#i-market" /></svg></span><span class="big-num" aria-hidden="true">02</span></div>
+              <h3>Trading &amp; Financial Markets</h3>
+              <p>Forex, Spot, market structure, risk and strategy basics.</p>
+              <ul class="tags"><li>Forex</li><li>Spot</li><li>Market structure</li><li>Risk first</li></ul>
+            </li>
+            <li class="card pillar tone-sun" id="pillar-automation" data-reveal>
+              <div class="pillar-head"><span class="tile"><svg class="i"><use href="#i-bot" /></svg></span><span class="big-num" aria-hidden="true">03</span></div>
+              <h3>Bot, Copy &amp; AI Trading</h3>
+              <p>Learn to use, test and assess trading automation features — product literacy, not general AI.</p>
+            </li>
+            <li class="card pillar tone-pink" id="pillar-marketing" data-reveal>
+              <div class="pillar-head"><span class="tile"><svg class="i"><use href="#i-megaphone" /></svg></span><span class="big-num" aria-hidden="true">04</span></div>
+              <h3>Digital Marketing &amp; Growth</h3>
+              <p>Campaigns, content, ethical promotion and community skills.</p>
+            </li>
+            <li class="card pillar tone-purple" id="pillar-leadership" data-reveal>
+              <div class="pillar-head"><span class="tile"><svg class="i"><use href="#i-lead" /></svg></span><span class="big-num" aria-hidden="true">05</span></div>
+              <h3>Leadership &amp; Communication</h3>
+              <p>Mentoring, presenting, facilitating and building trust.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 04 · Courses -->
+      <section class="section" id="courses" data-surface="sun" aria-labelledby="courses-title">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="label">Foundation learning / proposed launch</p>
+              <h2 id="courses-title">Start with the <span class="hl hl--white">right foundations.</span></h2>
+            </div>
+            <p class="lead">
+              A preview of the planned foundation catalog. No false enrollment or course availability claims — each
+              program is marked with its current concept status.
+            </p>
+          </div>
+
+          <div class="chip-row" role="group" aria-label="Filter foundation courses">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All foundations</button>
+            <button class="chip" type="button" data-filter="web3" aria-pressed="false">Web3</button>
+            <button class="chip" type="button" data-filter="trading" aria-pressed="false">Trading</button>
+            <button class="chip" type="button" data-filter="marketing" aria-pressed="false">Marketing</button>
+            <button class="chip" type="button" data-filter="leadership" aria-pressed="false">Leadership</button>
+          </div>
+
+          <div class="course-grid">
+            <article class="card course" data-category="web3">
+              <div class="course-art tone-lime"><span class="course-num" aria-hidden="true">01</span><svg class="i"><use href="#i-network" /></svg><span class="status">Planned</span></div>
+              <div class="course-body">
+                <p class="course-meta">Foundation · Web3</p>
+                <h3>Web3 &amp; Decentralization Foundations</h3>
+                <p>Networks, ownership, wallet safety and decentralized systems.</p>
+                <div class="course-foot"><span class="course-free">Free · Planned</span><button class="text-link" type="button" data-dialog="dialog-web3" aria-haspopup="dialog">Course overview <svg class="i"><use href="#i-arrow-ur" /></svg></button></div>
+              </div>
+            </article>
+
+            <article class="card course" data-category="trading">
+              <div class="course-art tone-sky"><span class="course-num" aria-hidden="true">02</span><svg class="i"><use href="#i-market" /></svg><span class="status">Planned</span></div>
+              <div class="course-body">
+                <p class="course-meta">Foundation · Markets</p>
+                <h3>Financial Markets &amp; Trading Risk</h3>
+                <p>Spot and Forex fundamentals with real-world risk awareness.</p>
+                <div class="course-foot"><span class="course-free">Free · Planned</span><button class="text-link" type="button" data-dialog="dialog-trading" aria-haspopup="dialog">Course overview <svg class="i"><use href="#i-arrow-ur" /></svg></button></div>
+              </div>
+            </article>
+
+            <article class="card course" data-category="trading">
+              <div class="course-art tone-purple"><span class="course-num" aria-hidden="true">03</span><svg class="i"><use href="#i-bot" /></svg><span class="status">Planned</span></div>
+              <div class="course-body">
+                <p class="course-meta">Foundation · Automation / AI</p>
+                <h3>Automation, Copy &amp; AI Trading Literacy</h3>
+                <p>How bots, copy trading and AI-assisted tools work — and where the risk sits.</p>
+                <div class="course-foot"><span class="course-free">Free · Planned</span><button class="text-link" type="button" data-dialog="dialog-automation" aria-haspopup="dialog">Course overview <svg class="i"><use href="#i-arrow-ur" /></svg></button></div>
+              </div>
+            </article>
+
+            <article class="card course" data-category="marketing">
+              <div class="course-art tone-pink"><span class="course-num" aria-hidden="true">04</span><svg class="i"><use href="#i-megaphone" /></svg><span class="status">Planned</span></div>
+              <div class="course-body">
+                <p class="course-meta">Foundation · Marketing</p>
+                <h3>Digital Marketing &amp; Community Growth</h3>
+                <p>Content, communication and ethical community-building skills.</p>
+                <div class="course-foot"><span class="course-free">Free · Planned</span><button class="text-link" type="button" data-dialog="dialog-marketing" aria-haspopup="dialog">Course overview <svg class="i"><use href="#i-arrow-ur" /></svg></button></div>
+              </div>
+            </article>
+
+            <article class="card course" data-category="leadership">
+              <div class="course-art tone-sun"><span class="course-num" aria-hidden="true">05</span><svg class="i"><use href="#i-lead" /></svg><span class="status">Planned</span></div>
+              <div class="course-body">
+                <p class="course-meta">Foundation · Leadership</p>
+                <h3>Leadership &amp; Communication Essentials</h3>
+                <p>Presenting, mentoring, group facilitation and accountability.</p>
+                <div class="course-foot"><span class="course-free">Free · Planned</span><button class="text-link" type="button" data-dialog="dialog-leadership" aria-haspopup="dialog">Course overview <svg class="i"><use href="#i-arrow-ur" /></svg></button></div>
+              </div>
+            </article>
+
+            <aside class="card course course--note tone-ink" data-category="all">
+              <svg class="i"><use href="#i-shield" /></svg>
+              <h3>What "planned" means</h3>
+              <p>
+                These are proposed courses. Nothing here is open for enrollment, and no status changes to live until the
+                Academy team has verified it.
+              </p>
+            </aside>
+          </div>
+
+          <p class="course-count" id="course-count" role="status" aria-live="polite">Showing all 5 planned foundation courses.</p>
+        </div>
+
+        <dialog class="course-dialog" id="dialog-web3" aria-labelledby="dt-web3">
+          <button class="dialog-close" type="button" data-close aria-label="Close course preview"><svg class="i"><use href="#i-close" /></svg></button>
+          <p class="label">Foundation course preview</p>
+          <h2 id="dt-web3">Web3 &amp; Decentralization Foundations</h2>
+          <p>A beginner-friendly foundation in digital ownership, decentralization and network trust — built to explain how the technology works before anyone is asked to participate in it.</p>
+          <h3>Proposed modules</h3>
+          <ol class="module-list"><li>How blockchains and networks differ</li><li>Wallet safety and self-custody basics</li><li>DeFi, DEX and decentralization tradeoffs</li><li>Scenario-based risk and safety assessment</li></ol>
+          <div class="dialog-foot"><span class="course-free">Free · Planned, not open</span><button class="btn btn--sm" type="button" data-close>Back to catalog</button></div>
+        </dialog>
+
+        <dialog class="course-dialog" id="dialog-trading" aria-labelledby="dt-trading">
+          <button class="dialog-close" type="button" data-close aria-label="Close course preview"><svg class="i"><use href="#i-close" /></svg></button>
+          <p class="label">Foundation course preview</p>
+          <h2 id="dt-trading">Financial Markets &amp; Trading Risk</h2>
+          <p>Market literacy and risk-first thinking before any strategy, automation or live trading. Designed to make losses and limitations visible, not to promise returns.</p>
+          <h3>Proposed modules</h3>
+          <ol class="module-list"><li>Spot vs. Forex market basics</li><li>Order types and slippage explained</li><li>Position sizing and risk boundaries</li><li>Practice-only market scenarios</li></ol>
+          <div class="dialog-foot"><span class="course-free">Free · Planned, not open</span><button class="btn btn--sm" type="button" data-close>Back to catalog</button></div>
+        </dialog>
+
+        <dialog class="course-dialog" id="dialog-automation" aria-labelledby="dt-automation">
+          <button class="dialog-close" type="button" data-close aria-label="Close course preview"><svg class="i"><use href="#i-close" /></svg></button>
+          <p class="label">Foundation course preview</p>
+          <h2 id="dt-automation">Automation, Copy &amp; AI Trading Literacy</h2>
+          <p>Product literacy for automated and AI-assisted trading features: what the tools actually do, how to test them, and why automation does not remove market risk. This is not a general AI course.</p>
+          <h3>Proposed modules</h3>
+          <ol class="module-list"><li>What bots, copy trading and AI-assisted tools can and cannot do</li><li>Testing a strategy in a simulated environment</li><li>Explaining automation limits and failure modes</li><li>Risk review and responsible-use checklist</li></ol>
+          <div class="dialog-foot"><span class="course-free">Free · Planned, not open</span><button class="btn btn--sm" type="button" data-close>Back to catalog</button></div>
+        </dialog>
+
+        <dialog class="course-dialog" id="dialog-marketing" aria-labelledby="dt-marketing">
+          <button class="dialog-close" type="button" data-close aria-label="Close course preview"><svg class="i"><use href="#i-close" /></svg></button>
+          <p class="label">Foundation course preview</p>
+          <h2 id="dt-marketing">Digital Marketing &amp; Community Growth</h2>
+          <p>Skills for responsible digital communication and sustainable community building, including how to spot hype-driven promotion and avoid it.</p>
+          <h3>Proposed modules</h3>
+          <ol class="module-list"><li>Audience research and ethical positioning</li><li>Content planning and campaign essentials</li><li>Community communication workflows</li><li>Marketing project with reflection</li></ol>
+          <div class="dialog-foot"><span class="course-free">Free · Planned, not open</span><button class="btn btn--sm" type="button" data-close>Back to catalog</button></div>
+        </dialog>
+
+        <dialog class="course-dialog" id="dialog-leadership" aria-labelledby="dt-leadership">
+          <button class="dialog-close" type="button" data-close aria-label="Close course preview"><svg class="i"><use href="#i-close" /></svg></button>
+          <p class="label">Foundation course preview</p>
+          <h2 id="dt-leadership">Leadership &amp; Communication Essentials</h2>
+          <p>Build facilitation, speaking and mentoring capabilities with demonstrated practice — leadership as a learned responsibility rather than a purchased rank.</p>
+          <h3>Proposed modules</h3>
+          <ol class="module-list"><li>Presenting concepts with clarity</li><li>Listening and mentoring fundamentals</li><li>Leading a responsible learning session</li><li>Ethical conduct and reflective assessment</li></ol>
+          <div class="dialog-foot"><span class="course-free">Free · Planned, not open</span><button class="btn btn--sm" type="button" data-close>Back to catalog</button></div>
+        </dialog>
+      </section>
+
+      <!-- 05 · Journey -->
+      <section class="section journey" id="journey" data-surface="ink" aria-labelledby="journey-title">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="label">The ZOVYNO learning journey</p>
+              <h2 id="journey-title">From curiosity to <span class="hl hl--lime">real capability.</span></h2>
+            </div>
+            <p class="lead">
+              Designed to measure learning and good judgment, not trading profits, token ownership or recruitment activity.
+            </p>
+          </div>
+
+          <ol class="steps" data-stagger>
+            <li class="card step tone-lime" data-reveal style="--r: -1.5deg">
+              <span class="mono-tag">01 / Foundation</span><h3>Learn.</h3><p>Build a solid understanding of Web3, markets, digital skills and leadership principles.</p>
+              <svg class="i step-arrow" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </li>
+            <li class="card step tone-sky" data-reveal style="--r: 1.2deg">
+              <span class="mono-tag">02 / Practice</span><h3>Practice.</h3><p>Apply ideas through simulations, workshops and guided exercises.</p>
+              <svg class="i step-arrow" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </li>
+            <li class="card step tone-sun" data-reveal style="--r: -1deg">
+              <span class="mono-tag">03 / Assess</span><h3>Validate.</h3><p>Demonstrate skill through meaningful projects and competency checks.</p>
+              <svg class="i step-arrow" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </li>
+            <li class="card step step--lead tone-pink" data-reveal style="--r: 1.6deg">
+              <span class="mono-tag">04 / Lead</span><h3>Lead.</h3><p>Develop the ability to mentor learners and serve communities responsibly.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Marquee band -->
+      <div class="band band--purple band--right">
+        <div class="band-inner">
+          <div class="track">
+            <ul>
+              <li>Risk first<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Leadership<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Digital marketing<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>AI-assisted tools<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Bots<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Copy trading<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Spot<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Forex<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+              <li>Web3<svg class="star" aria-hidden="true"><use href="#i-star" /></svg></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 · Labs -->
+      <section class="section" id="labs" data-surface="ink" aria-labelledby="labs-title">
+        <div class="shell split">
+          <div class="split-copy" data-reveal>
+            <p class="label">Applied learning / future ORZENO labs</p>
+            <h2 id="labs-title">Understand the tool. <span class="hl hl--sun">Respect the risk.</span></h2>
+            <p class="lead">
+              Explore how trading concepts connect to proposed ORZENO educational labs for Spot, Forex, Copy, Bot and
+              AI-assisted trading. Practice environments are simulated and will be added only when verified.
+            </p>
+            <ul class="ticks">
+              <li><span class="tick"><svg class="i"><use href="#i-check" /></svg></span>Demo-first learning with virtual capital</li>
+              <li><span class="tick"><svg class="i"><use href="#i-check" /></svg></span>Strategy configuration and explainable risk</li>
+              <li><span class="tick"><svg class="i"><use href="#i-check" /></svg></span>AI trading product literacy — not general AI courses</li>
+            </ul>
+            <a class="btn btn--white" href="#faq">How the practice labs work <svg class="i"><use href="#i-arrow" /></svg></a>
+          </div>
+
+          <figure class="lab" data-reveal>
+            <div class="lab-bar"><span class="lab-dots" aria-hidden="true"><i></i><i></i><i></i></span><strong>ORZENO / Education Lab</strong><span>Visual concept</span></div>
+            <div class="lab-window">
+              <div class="lab-top"><span>Market Understanding &amp; Risk Practice</span><span class="status status--alert">Simulated · Not live</span></div>
+              <div class="lab-panel">
+                <svg class="lab-chart" viewBox="0 0 330 170" aria-hidden="true" focusable="false">
+                  <path class="grid" d="M0 42h330M0 85h330M0 128h330M66 0v170M132 0v170M198 0v170M264 0v170" />
+                  <path class="area" d="M0 132 30 108 58 122 88 100 112 92 145 108 177 72 203 86 234 50 258 66 290 38 330 54V170H0Z" />
+                  <path class="line-b" d="M0 148 42 134 91 136 143 122 186 108 227 106 277 94 330 84" />
+                  <path class="line-a" pathLength="1" d="M0 132 30 108 58 122 88 100 112 92 145 108 177 72 203 86 234 50 258 66 290 38 330 54" />
+                  <circle class="pin" cx="290" cy="38" r="5" />
+                </svg>
+                <dl class="lab-risk">
+                  <div><dt>Trading mode</dt><dd><span class="toggle is-on" aria-hidden="true"></span>Demo</dd></div>
+                  <div><dt>Risk review</dt><dd><span class="toggle is-on" aria-hidden="true"></span>Required</dd></div>
+                  <div><dt>Automation</dt><dd><span class="toggle" aria-hidden="true"></span>Disabled</dd></div>
+                  <div><dt>Capital</dt><dd><span class="toggle is-on" aria-hidden="true"></span>Virtual only</dd></div>
+                </dl>
+              </div>
+              <figcaption>Illustrative chart. No real market data, profit claims, live execution, deposit or active partner integration.</figcaption>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 07 · Leadership -->
+      <section class="section" id="leadership" data-surface="pink" aria-labelledby="leadership-title">
+        <div class="shell split">
+          <div class="split-copy" data-reveal>
+            <p class="label">Leadership is learned, not purchased</p>
+            <h2 id="leadership-title">Build the skills. <span class="hl hl--white">Earn the responsibility.</span></h2>
+            <p class="lead">
+              ZOVYNO's leadership direction is built around practical communication, teaching capability, ethical
+              marketing, mentoring and community contribution — never referral counts or token holdings.
+            </p>
+            <a class="btn btn--ink" href="#faq">Explore our leadership approach <svg class="i"><use href="#i-arrow" /></svg></a>
+          </div>
+
+          <div class="ladder" data-reveal>
+            <div class="ladder-head"><h3>Future leadership pathway</h3><span class="tile"><svg class="i"><use href="#i-lead" /></svg></span></div>
+            <ol class="stairs">
+              <li class="tone-white" style="--n: 0"><span>01</span>Complete foundation learning</li>
+              <li class="tone-sky" style="--n: 1"><span>02</span>Demonstrate practical skills</li>
+              <li class="tone-sun" style="--n: 2"><span>03</span>Facilitate and mentor responsibly</li>
+              <li class="tone-lime" style="--n: 3"><span>04</span>Qualify for trainer evaluation</li>
+              <li class="tone-ink is-goal" style="--n: 4"><span>05</span>Apply for community leadership opportunities</li>
+            </ol>
+            <p class="fine-print">Pathway concept. Certification, roles and appointments are not automatic or guaranteed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 · Mission -->
+      <section class="section" id="mission" data-surface="sky" aria-labelledby="mission-title">
+        <div class="shell split split--reverse">
+          <div class="split-copy" data-reveal>
+            <p class="label">Decentralization with purpose</p>
+            <h2 id="mission-title">Global access. <span class="hl hl--sun">Local voices.</span></h2>
+            <p class="lead">
+              We envision consistent education standards with regional educators, multilingual learning and learner-owned
+              evidence of skills — progressively developed, not promised as existing infrastructure.
+            </p>
+            <ul class="ticks">
+              <li><span class="tick"><svg class="i"><use href="#i-network" /></svg></span>Distributed teaching, shared quality standards</li>
+              <li><span class="tick"><svg class="i"><use href="#i-book" /></svg></span>Multilingual learning access</li>
+              <li><span class="tick"><svg class="i"><use href="#i-shield" /></svg></span>Verifiable credentials as a future roadmap</li>
+            </ul>
+            <ul class="langs" aria-label="Planned languages">
+              <li class="tone-lime" style="--r: -3deg"><b>English</b><small>First</small></li>
+              <li class="tone-white" style="--r: 2deg"><b lang="bn">বাংলা</b><small>Planned</small></li>
+              <li class="tone-pink" style="--r: -1.5deg"><b lang="hi">हिन्दी</b><small>Planned</small></li>
+            </ul>
+          </div>
+
+          <figure class="globe-card" data-reveal>
+            <svg class="globe" viewBox="0 0 400 400" role="img" aria-label="Abstract connected planet representing distributed learning across regions.">
+              <circle class="g-shadow" cx="212" cy="212" r="150" />
+              <circle class="g-body" cx="200" cy="200" r="150" />
+              <g class="g-lines">
+                <ellipse cx="200" cy="200" rx="68" ry="150" />
+                <path d="M200 50v300M50 200h300M67.3 130h265.4M67.3 270h265.4" />
+              </g>
+              <path class="g-links" d="M128 150 262 128 300 236 170 278Z M128 150 210 200 300 236 M262 128 210 200 170 278" />
+              <circle class="g-node g-node--pink" cx="128" cy="150" r="12" />
+              <circle class="g-node g-node--lime" cx="262" cy="128" r="12" />
+              <circle class="g-node g-node--white" cx="300" cy="236" r="12" />
+              <circle class="g-node g-node--purple" cx="170" cy="278" r="12" />
+              <circle class="g-node g-node--ink" cx="210" cy="200" r="14" />
+              <g class="g-orbit">
+                <ellipse cx="200" cy="200" rx="192" ry="58" transform="rotate(-22 200 200)" />
+                <circle class="g-sat" cx="22" cy="272" r="13" />
+              </g>
+            </svg>
+            <figcaption>Connected world · Shared knowledge</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 09 · FAQ -->
+      <section class="section" id="faq" data-surface="paper" aria-labelledby="faq-title">
+        <div class="shell faq">
+          <div class="faq-copy" data-reveal>
+            <p class="label">The essentials</p>
+            <h2 id="faq-title">Questions, <span class="hl hl--lime">answered.</span></h2>
+            <p class="lead">
+              Clear expectations matter — especially when education touches trading, digital assets and future career
+              pathways.
+            </p>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <details name="faq">
+              <summary>Are courses currently available?<span class="faq-icon"><svg class="i"><use href="#i-plus" /></svg></span></summary>
+              <p>This is a design concept. The foundation courses and platform journeys displayed here are proposed; they should not be shown as open for enrollment until the Academy team has verified availability.</p>
+            </details>
+            <details name="faq">
+              <summary>Do I need to buy tokens or connect a wallet?<span class="faq-icon"><svg class="i"><use href="#i-plus" /></svg></span></summary>
+              <p>No. Token purchase, exchange deposit, wallet connection, node purchase or recruitment activity is not a prerequisite for exploring course information — or for beginning free foundation learning when it launches.</p>
+            </details>
+            <details name="faq">
+              <summary>Does ZOVYNO teach general artificial intelligence?<span class="faq-icon"><svg class="i"><use href="#i-plus" /></svg></span></summary>
+              <p>No. The curriculum does not include a generic AI school or AI programming. Only the safe use, evaluation and limitations of ORZENO AI-assisted trading product features may be covered within trading education.</p>
+            </details>
+            <details name="faq">
+              <summary>Is trading education investment advice?<span class="faq-icon"><svg class="i"><use href="#i-plus" /></svg></span></summary>
+              <p>No. Training is educational and risk-aware. Simulations are clearly labeled, no investment returns are promised, and actual trading may involve significant losses.</p>
+            </details>
+            <details name="faq">
+              <summary>Are certificates or leadership roles guaranteed?<span class="faq-icon"><svg class="i"><use href="#i-plus" /></svg></span></summary>
+              <p>No. Any future certificate must follow defined assessments and verification rules. Trainer status or leadership appointment would require separate evaluation and is never guaranteed by payment, referral activity or course completion alone.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 · Final CTA -->
+      <section class="final-cta" data-surface="lime" aria-labelledby="cta-title">
+        <svg class="deco deco--4" aria-hidden="true" focusable="false"><use href="#i-star" /></svg>
+        <svg class="deco deco--5" aria-hidden="true" focusable="false"><use href="#i-star" /></svg>
+        <div class="shell" data-reveal>
+          <div>
+            <h2 id="cta-title">Ready to learn differently?</h2>
+            <p>Explore the proposed foundation paths for Web3, markets and leadership.</p>
+          </div>
+          <a class="btn btn--ink btn--lg" href="#courses">Explore Foundation Courses <svg class="i"><use href="#i-arrow" /></svg></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-surface="ink">
+      <div class="shell">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="#top" aria-label="ZOVYNO Academy — back to top">
+              <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#i-mark" /></svg></span>
+              <span class="logo-word"><strong>ZOVYNO</strong><small>ACADEMY</small></span>
+            </a>
+            <p>Education in Web3, financial markets, responsible trading systems, digital growth and leadership. A proposed learning brand powered by NodalWaves.</p>
+            <p class="powered">Powered by <b>NodalWaves</b></p>
+          </div>
+          <nav class="footer-col" aria-label="Learn"><h2>Learn</h2><a href="#paths">Learning Paths</a><a href="#pillars">Disciplines</a><a href="#courses">Free Foundations</a></nav>
+          <nav class="footer-col" aria-label="Explore"><h2>Explore</h2><a href="#labs">Practice Labs</a><a href="#leadership">Leadership</a><a href="#mission">Our Mission</a></nav>
+          <nav class="footer-col" aria-label="Clarity"><h2>Clarity</h2><a href="#faq">FAQ</a><a href="#faq">Trading Risk</a><a href="#faq">Learning Status</a></nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 ZOVYNO Academy — UI/UX concept only · Working brand; domain and trademark clearance pending.</span>
+          <span>Not live · Not investment advice · No real brokerage integration</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="design-pill" href="../volt/">Design 2 of 2 <span aria-hidden="true">·</span> See Design 1 <svg class="i"><use href="#i-arrow" /></svg></a>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
