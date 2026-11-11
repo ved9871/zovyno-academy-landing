@@ -13,10 +13,9 @@ Design samples of the ZOVYNO Academy homepage for client and management review *
 | `pop/` | **Design 2 — Pop.** Loud neo-brutalist: sticker headlines, thick outlines, hard shadows, colour-blocked sections. Fonts: Bricolage Grotesque, DM Sans, Space Mono |
 | `aurora/` | **Design 3 — Aurora.** Premium Web3 protocol feel: frosted-glass panels over a colour glow, gradient headlines, orbiting discipline hub, discipline tabs. Fonts: Sora, Manrope, IBM Plex Mono |
 | `quest/` | **Design 4 — Quest.** Retro arcade, level-up academy: pixel type, game-style panels, discipline map, staged learning path. Fonts: Pixelify Sans, Outfit, Silkscreen |
-| `ledger/` | **Design 5 — Ledger (client direction).** The academy content in the client's ORZENO landing style: ink navy, ivory serif display, champagne gold accent, hairline rules, floating concept panels, course tour tabs. Fonts (self-hosted, from the client package): Newsreader, Inter Tight, IBM Plex Mono |
 | `classic/` | Earlier draft that follows the client's Blueprint v1.1 (calm navy concept), kept for reference |
 
-Each design is self-contained (`index.html`, `styles.css`, `site.js`), with no build step. Designs 1–4 load Google Fonts; Design 5 ships its own font files.
+Each design is self-contained (`index.html`, `styles.css`, `site.js`), with no build step and no dependencies apart from Google Fonts.
 
 ## How to view
 
