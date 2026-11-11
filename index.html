@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ZOVYNO Academy — Design Directions</title>
-    <meta name="description" content="Four landing page design directions for ZOVYNO Academy. Design concepts for review — not a live academy." />
+    <meta name="description" content="Five landing page design directions for ZOVYNO Academy. Design concepts for review — not a live academy." />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#0b0c10" />
     <link rel="icon" href="volt/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=JetBrains+Mono:wght@400;700&family=Pixelify+Sans:wght@700&family=Sora:wght@800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,200;1,6..72,300&family=JetBrains+Mono:wght@400;700&family=Pixelify+Sans:wght@700&family=Sora:wght@800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -226,6 +226,40 @@
         background: var(--sun);
         box-shadow: 5px 5px 0 var(--ink);
       }
+      .card--wide {
+        grid-column: 1 / -1;
+        flex-direction: row;
+      }
+      .card--wide .thumb {
+        flex: 1.1;
+        aspect-ratio: auto;
+        min-height: 300px;
+        padding: 6%;
+      }
+      .card--wide .body {
+        flex: 1;
+        align-content: center;
+      }
+      .thumb--ledger {
+        background:
+          radial-gradient(50% 70% at 82% 30%, rgb(58 141 255 / 0.22), transparent 70%),
+          linear-gradient(rgb(216 184 122 / 0.14) 1px, transparent 1px) 0 100% / 100% 34px,
+          #070c15;
+        font-family: 'Newsreader', Georgia, serif;
+        font-weight: 200;
+        font-size: clamp(1.9rem, 5vw, 4rem);
+        line-height: 0.98;
+        letter-spacing: -0.035em;
+        color: #f2ede3;
+      }
+      .thumb--ledger b {
+        font-weight: 200;
+      }
+      .thumb--ledger b:nth-child(3) {
+        font-style: italic;
+        font-weight: 300;
+        color: #d8b87a;
+      }
       .thumb--aurora {
         justify-items: center;
         text-align: center;
@@ -378,6 +412,14 @@
         color: var(--lime);
       }
       @media (max-width: 820px) {
+        .card--wide {
+          flex-direction: column;
+        }
+        .card--wide .thumb {
+          flex: none;
+          aspect-ratio: 16 / 10;
+          min-height: 0;
+        }
         .cards,
         .notes {
           grid-template-columns: minmax(0, 1fr);
@@ -401,15 +443,26 @@
 
       <main>
         <section class="intro">
-          <h1>Four directions. <span>One academy.</span></h1>
+          <h1>Five directions. <span>One academy.</span></h1>
           <p>
-            All four designs carry the same ten sections and the same copy: paths, five disciplines, foundation courses, the
+            All five designs carry the same ten sections and the same copy: paths, five disciplines, foundation courses, the
             learning journey, ORZENO practice lab, leadership pathway, mission and FAQ. Open each one on a laptop and on
             a phone, then pick the energy that fits.
           </p>
         </section>
 
         <div class="cards">
+          <a class="card card--wide" href="ledger/" style="--c: #d8b87a">
+            <div class="thumb thumb--ledger" aria-hidden="true"><b>Learn.</b><b>Decentralize.</b><b>Lead.</b></div>
+            <div class="body">
+              <span class="num">Design 5 · Client direction</span>
+              <h2>Ledger</h2>
+              <p>The academy in the client's own ORZENO look: ink navy, ivory serif headlines with a gold italic accent, hairline rules, mono labels and floating concept panels.</p>
+              <ul class="chips"><li>Dark</li><li>Editorial / institutional</li><li>Newsreader + Inter Tight</li></ul>
+              <span class="open">Open Design 5 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+            </div>
+          </a>
+
           <a class="card" href="volt/" style="--c: var(--lime)">
             <div class="thumb thumb--volt" aria-hidden="true"><b>Learn.</b><b>Decentralize.</b><b>Lead.</b></div>
             <div class="body">
@@ -456,7 +509,7 @@
         </div>
 
         <div class="notes">
-          <div class="note"><h3>Same content</h3><p>Every section, label and disclaimer is identical in all four, so the choice is purely about look and feel.</p></div>
+          <div class="note"><h3>Same content</h3><p>Every section, label and disclaimer is identical in all five, so the choice is purely about look and feel.</p></div>
           <div class="note"><h3>Works on phones</h3><p>All are responsive, with working menu, course filters, course previews and FAQ.</p></div>
           <div class="note"><h3>Honest by design</h3><p>No invented numbers, testimonials or live market data. Courses are marked Planned; the lab is marked Simulated.</p></div>
         </div>
